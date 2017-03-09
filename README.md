@@ -3,7 +3,7 @@ Formatted printing utility in Fortran. This printing utility is convenient for d
 
 This utility was adapted from prini.f (originally written by V. Rokhlin). For those familiar with prini.f, this utility offers several advantages over its predecessor:
 
-- No need for an initializer call. By default, all print statements are printed to both file and screen (which can be disabled, if desired).
+- No need for an initializer call. By default, all print statements are printed to both file and screen (either of which can be disabled, if desired).
 
 - Printing subroutines for all types have a common, single interface: call print("message", var). You do not need to use prin2("message", real) or prinf("message", integer).
 
