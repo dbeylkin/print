@@ -23,7 +23,7 @@ $(LIB).a: $(OBJ)
 	$(RANLIB) $@
 
 driver: $(LIB).a
-	$(FC) -L. -o $(EXEC) $(FFLAGS) $(EXAMPLE)/print_driver.f90 -lprint
+	$(FC) $(FFLAGS) -L. -o $(EXEC) $(EXAMPLE)/print_driver.f90 -lprint
 
 clean:
 	rm -f *.o
@@ -46,6 +46,6 @@ help:
 	@echo "  driver    to make the example driver program"
 	@echo "  clean     to remove all compiled objects"
 	@echo "  cleanlib  to remove all libraries"
-	@echo "  cleantest to remove test driver program"
+	@echo "  cleantest to remove example driver program"
 	@echo "  cleanall  to clean everything"
 	@echo "  help      to display this help message"

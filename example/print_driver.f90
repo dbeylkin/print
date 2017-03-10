@@ -1,5 +1,5 @@
 program test
-use printmod
+  use printmod
   implicit none
   integer, parameter :: sp = SELECTED_REAL_KIND(6, 37)
   integer, parameter :: dp = SELECTED_REAL_KIND(15, 307)
