@@ -42,10 +42,10 @@ cleanall: clean cleanlib cleandriver
 
 help:
 	@echo "Please use \"make <target>\" where <target> is one of"
-	@echo "  all       to make $(LIB).a library"
-	@echo "  driver    to make the example driver program"
-	@echo "  clean     to remove all compiled objects"
-	@echo "  cleanlib  to remove all libraries"
-	@echo "  cleantest to remove example driver program"
-	@echo "  cleanall  to clean everything"
-	@echo "  help      to display this help message"
+	@echo "  all         to make $(LIB).a library"
+	@echo "  driver      to make the example driver program"
+	@echo "  clean       to remove all compiled objects"
+	@echo "  cleanlib    to remove all libraries"
+	@echo "  cleandriver to remove example driver program"
+	@echo "  cleanall    to clean everything"
+	@echo "  help        to display this help message"
