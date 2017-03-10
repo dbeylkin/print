@@ -6,13 +6,13 @@ ARCH      = ar
 ARCHFLAGS = cr
 RANLIB    = ranlib
 
-SRC 	  = src
-EXAMPLE	  = example
+SRC       = src
+EXAMPLE   = example
 
 vpath %.f90 $(SRC)
 
-OBJ = print.o
-EXEC = int2
+OBJ       = print.o
+EXEC      = int2
 
 .PHONY: all driver
 
