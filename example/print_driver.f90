@@ -1,4 +1,4 @@
-program test
+program print_driver
   use printmod
   implicit none
   integer, parameter :: sp = SELECTED_REAL_KIND(6, 37)
@@ -75,4 +75,4 @@ program test
   call print(.true., .true.)
   call print("this message appears everywhere")
 
-end program test
+end program print_driver

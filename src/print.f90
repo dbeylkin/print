@@ -28,9 +28,6 @@ module printmod
   logical :: pscreen1 = .true.
   logical :: pfile1 = .true.
 
-  ! public/private variables
-  private :: sp, dp, qp, pscreen1, pfile1
-
   interface print
      module procedure printspec
      module procedure printfn
@@ -49,10 +46,8 @@ module printmod
      module procedure printm
   end interface print
 
- ! public/private subroutines
-  private :: messpr, printfn, printf1, printn, print1, &
-       print2n, print21, print2xn, print2x1, printqn, &
-       printq1, println, printl1, printa, printm
+  private
+  public print
 
 contains
 
